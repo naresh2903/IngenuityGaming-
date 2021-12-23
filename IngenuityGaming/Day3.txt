@@ -1,0 +1,70 @@
+// Day 3 write a program to sum of all the array elements
+public class Main
+{
+	public static void main(String[] args) {
+		int a[] = {10,30,50,60,78,87,56};
+		int sum=0;
+		for(int i =0;i<a.length ;i++){
+		    sum+=a[i];
+		}
+		System.out.println(sum);
+	}
+}
+
+
+
+
+//////////////////////////////
+
+// Day 3 use of static keyword
+
+
+class Employee{
+    static int empid;
+    static String empname;
+    
+    static{
+        empid=1;
+        empname="Narendra";
+    }
+    
+    public static void display(){
+        System.out.println(empid);
+        System.out.println(empname);
+    }
+}
+
+public class Main
+{
+	public static void main(String[] args) {
+	Employee.display();
+	}
+}
+
+
+
+Static method only asscess static variables
+
+
+
+
+
+
+
+
+
+
+// Day 3 String
+public class Main
+{
+	public static void main(String[] args) {
+	String fname =new String("Narendra");
+	String lname = new String("Pal");
+	String fullname = fname+lname;
+	
+	System.out.println(fullname.toUpperCase());
+		System.out.println(fullname.toLowerCase());
+			System.out.println(fullname.charAt(5));
+				System.out.println(fullname.length());
+	}
+}

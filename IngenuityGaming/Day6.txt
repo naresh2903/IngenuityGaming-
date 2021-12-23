@@ -1,0 +1,115 @@
+// buffered reader
+
+import java.io.*;
+
+public class Main
+{
+  public static void main (String[]args) throws IOException
+  {
+      BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+      String str;
+      do{
+          str = br.readLine();
+          System.out.println(str);
+      }while(!str.equals("stop"));
+
+  }
+}
+
+
+
+
+
+
+
+
+//
+fileinputstream
+fileoutputstream
+
+
+
+
+import java.io.FileInputStream;
+import java.io.FileOutputStream;
+import java.io.IOException; 
+
+
+public class Main
+{
+	public static void main(String[] args) throws IOException {
+		FileInputStream in =null;
+		FileOutputStream out = null;
+		try{
+		    in = new FileInputStream("C:\\Users\\This PC\\Desktop\\practise\\codeByte.java");
+		    out= new FileOutputStream("C:\\Users\\This PC\\Desktop\\practise\\esjs.txt");
+		    	int c;
+		while((c = in.read())!= -1 ){
+		    out.write(c);
+		}
+		System.out.println("File copied Successfully");
+		    
+		}
+	
+		finally{
+	    if(in!=null){
+	        in.close();
+	    }
+	    if(out!=null){
+	        out.close();
+	    }
+	}
+
+	
+	}
+	
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/// file reader
+
+ import java.io.*;
+ 
+
+public class Main
+{
+	public static void main(String[] args) throws IOException {
+		FileReader inputstream;
+		FileWriter outputstream;
+		
+		
+		try{
+		    inputstream = new FileReader("path of file");
+		    outputstream = new FileWriter("c\\thispc\\output.txt");
+		    
+		    int c;
+		    while(c=inputstream.read()!=-1){
+		        outputstream.write();
+		    }
+		    System.out.println("file copied");
+		    
+		}
+		finally{
+		    if(inputstream!=null){
+		        inputstream.close());
+		    }
+		    if(outputstream!=null){
+		        outputstream.close();
+		    }
+		}
+
+	
+	}
+	
+}
+

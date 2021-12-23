@@ -1,0 +1,48 @@
+
+//vector
+
+import java.util.*;
+class Main {
+    public static void main(String args[])
+{
+    Vector<String> v = new Vector<String>();
+    v.add("fiest");
+    v.add("second");
+    v.add("third");
+Iterator i = v.iterator();
+
+    while(i.hasNext()){
+        Object it =i.next();
+        System.out.println(" "+it.toString());
+    }
+   
+
+   }
+}
+
+
+//array list 
+
+
+import java.util.*;
+class Main {
+    public static void main(String args[])
+{
+    ArrayList<String> v = new ArrayList<String>();
+    v.add("first");
+    v.add("second");
+    v.add("third");
+Iterator i = v.iterator();
+
+    while(i.hasNext()){
+        Object it =i.next();
+        System.out.println(" "+it.toString());
+    }
+   
+
+   }
+}
+
+v.isEmpty()
+v.size()
+v.indexOf(value)

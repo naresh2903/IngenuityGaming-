@@ -1,0 +1,65 @@
+question3:
+
+import java.io.*;
+class Student{
+    private int strollno;
+    private String stname;
+    private float percentage;
+    
+    
+
+    public void setrollno(int strollno ){
+        this.strollno = strollno;
+    } 
+    public int getrollno(){
+        return strollno;
+    } 
+   
+    
+    
+    public void setname(String stname){
+        this.stname = stname;
+    }
+    public String getname(){
+        return stname;
+    }
+    
+     public void setpercentage(float percentage){
+        this.percentage = percentage;
+    }
+    public float getpercentage(){
+        return percentage;
+    }
+    
+    public void display(){
+        System.out.println(getrollno()+" "+getname()+" "+getpercentage());
+    }
+    
+    
+}
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	    try{
+	        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+	        int strollno = Integer.parseInt(br.readLine());
+	        
+	        String stname = br.readLine();
+	        
+	        float percentage = Float.parseFloat(br.readLine());
+	        
+	        Student st1 = new Student();
+	        st1.setrollno(strollno);
+	        st1.setname(stname);
+	        st1.setpercentage(percentage);
+	        st1.display();
+	        
+	        
+	    }
+	    catch(Exception e){
+	        
+	    }
+	        
+	}
+}

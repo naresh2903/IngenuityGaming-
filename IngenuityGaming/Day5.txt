@@ -1,0 +1,62 @@
+/******************************************************************************
+
+                            Online Java Compiler.
+                Code, Compile, Run and Debug java program online.
+Write your code in this editor and press "Run" button to execute it.
+
+*******************************************************************************/
+	class AgeException extends Exception{
+	       public AgeException(String message){
+		     super(message);
+		}
+	}
+		class Employee{
+		    private int age ;
+		    public void setAge(int age) throws AgeException{
+		        if(age <18)
+		       throw new AgeException("age must greater than 10");
+		       this.age = age;
+		       System.out.println("age is good");
+		    }
+		}
+public class Main
+{
+	public static void main(String[] args) {
+// 		int num1 =10;
+// 		int num2=0;
+// 		try{
+// 		    int res = num1/num2;
+// 		    System.out.println("Exception");
+// 		}
+// 		catch(ArithmeticException e){
+// 		    e.printStackTrace();
+// 		}
+
+        // try{
+        //     int a[]={args.length};
+        //     int num=100/a[0];
+        //     System.out.println(a[1]);
+            
+        // }
+        // catch(ArithmeticException e){
+        //   // e.printStackTrace();
+        //   System.out.println("1 statement is executed");
+        // }
+        // catch(ArrayIndexOutOfBoundsException e){
+        //   // e.printStackTrace();
+        //   System.out.println("2 statement is executed");
+        // }
+        // finally{
+        //     System.out.println("Finally statement is executed");
+        // }
+		
+		Employee e1 = new Employee();
+		try{
+		    e1.setAge(20);
+		}catch(AgeException e){
+		    e.printStackTrace();
+		}
+	
+		}
+	}
+

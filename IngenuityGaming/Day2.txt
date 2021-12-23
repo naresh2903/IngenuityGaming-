@@ -1,0 +1,93 @@
+*****************************************************
+
+class Student{
+    private int strollno;
+    private String stname;
+    private String stadd;
+    
+    Student(int strollno ,String stname,String stadd){
+        
+        this.strollno = strollno;
+        this.stname = stname;
+        this.stadd= stadd;
+    }
+    
+    public void display(){
+        System.out.println(this.strollno+" "+this.stname+" "+this.stadd);
+    }
+    
+    
+}
+public class Main
+{
+	public static void main(String[] args) {
+	        Student st1 = new Student(1,"narendra" , "agra");
+	        st1.display();
+	         Student st2 = new Student(2,"anant" , "eitha");
+	        st2.display();
+	}
+}
+************************************************************
+
+
+
+
+
+
+import java.io.*;
+class Student{
+    private int strollno;
+    private String stname;
+    private String stadd;
+    
+    Student(int strollno ,String stname,String stadd){
+        
+        this.strollno = strollno;
+        this.stname = stname;
+        this.stadd= stadd;
+    }
+    
+    public void display(){
+        System.out.println(this.strollno+" "+this.stname+" "+this.stadd);
+    }
+    
+    
+}
+public class Main
+{
+	public static void main(String[] args) {
+	    
+	    
+	    try{
+	        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+	        int strollno = Integer.parseInt(br.readLine());
+	        
+	        String stname = br.readLine();
+	        
+	        String stadd = br.readLine();
+	        
+	        Student st1 = new Student(strollno , stname , stadd);
+	        st1.display();
+	        
+	        
+	    }
+	    catch(Exception e){
+	        
+	    }
+	        
+	}
+}
+
+
+by using gette and setter 
+1. pojo class which consits getter and setter 
+
+2. cmdline argument taking in java
+
+3. gsytec@gmail.com
+
+4. day1
+
+
+
+
